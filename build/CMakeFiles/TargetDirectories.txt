@@ -1,0 +1,3 @@
+/Users/kamila/building-maincraft-1/build/CMakeFiles/voxel_renderer.dir
+/Users/kamila/building-maincraft-1/build/CMakeFiles/edit_cache.dir
+/Users/kamila/building-maincraft-1/build/CMakeFiles/rebuild_cache.dir
