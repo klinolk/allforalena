@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/kamila/building-maincraft-1/main.cpp" "CMakeFiles/voxel_renderer.dir/main.cpp.o" "gcc" "CMakeFiles/voxel_renderer.dir/main.cpp.o.d"
-  "/Users/kamila/building-maincraft-1/utils/mesh.cpp" "CMakeFiles/voxel_renderer.dir/utils/mesh.cpp.o" "gcc" "CMakeFiles/voxel_renderer.dir/utils/mesh.cpp.o.d"
-  "/Users/kamila/building-maincraft-1/utils/octree.cpp" "CMakeFiles/voxel_renderer.dir/utils/octree.cpp.o" "gcc" "CMakeFiles/voxel_renderer.dir/utils/octree.cpp.o.d"
+  "/Users/kamila/building-maincraft-1/main.cpp" "CMakeFiles/render.dir/main.cpp.o" "gcc" "CMakeFiles/render.dir/main.cpp.o.d"
+  "/Users/kamila/building-maincraft-1/utils/mesh.cpp" "CMakeFiles/render.dir/utils/mesh.cpp.o" "gcc" "CMakeFiles/render.dir/utils/mesh.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named voxel_renderer
+# Target rules for targets named render
 
 # Build rule for target.
-voxel_renderer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 voxel_renderer
-.PHONY : voxel_renderer
+render: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 render
+.PHONY : render
 
 # fast build rule for target.
-voxel_renderer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/build
-.PHONY : voxel_renderer/fast
+render/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/build
+.PHONY : render/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 utils/mesh.o: utils/mesh.cpp.o
@@ -158,7 +158,7 @@ utils/mesh.o: utils/mesh.cpp.o
 
 # target to build an object file
 utils/mesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/utils/mesh.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/utils/mesh.cpp.o
 .PHONY : utils/mesh.cpp.o
 
 utils/mesh.i: utils/mesh.cpp.i
@@ -166,7 +166,7 @@ utils/mesh.i: utils/mesh.cpp.i
 
 # target to preprocess a source file
 utils/mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/utils/mesh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/utils/mesh.cpp.i
 .PHONY : utils/mesh.cpp.i
 
 utils/mesh.s: utils/mesh.cpp.s
@@ -174,32 +174,8 @@ utils/mesh.s: utils/mesh.cpp.s
 
 # target to generate assembly for a file
 utils/mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/utils/mesh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/render.dir/build.make CMakeFiles/render.dir/utils/mesh.cpp.s
 .PHONY : utils/mesh.cpp.s
-
-utils/octree.o: utils/octree.cpp.o
-.PHONY : utils/octree.o
-
-# target to build an object file
-utils/octree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/utils/octree.cpp.o
-.PHONY : utils/octree.cpp.o
-
-utils/octree.i: utils/octree.cpp.i
-.PHONY : utils/octree.i
-
-# target to preprocess a source file
-utils/octree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/utils/octree.cpp.i
-.PHONY : utils/octree.cpp.i
-
-utils/octree.s: utils/octree.cpp.s
-.PHONY : utils/octree.s
-
-# target to generate assembly for a file
-utils/octree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_renderer.dir/build.make CMakeFiles/voxel_renderer.dir/utils/octree.cpp.s
-.PHONY : utils/octree.cpp.s
 
 # Help Target
 help:
@@ -209,16 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... voxel_renderer"
+	@echo "... render"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... utils/mesh.o"
 	@echo "... utils/mesh.i"
 	@echo "... utils/mesh.s"
-	@echo "... utils/octree.o"
-	@echo "... utils/octree.i"
-	@echo "... utils/octree.s"
 .PHONY : help
 
 

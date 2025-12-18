@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(VoxelRenderer CXX)
+project(SdfTask CXX)
 
 # Set C++ standard to at least C++11 (or 17 for better features)
 set(CMAKE_CXX_STANDARD 17)
@@ -57,20 +57,19 @@ include_directories(${SDL2_INCLUDE_DIRS})
 add_compile_definitions(USE_STB_IMAGE)
 
 # Add the executable
-add_executable(voxel_renderer
+add_executable(render
     main.cpp
-    utils/octree.cpp
     utils/mesh.cpp)
 
 # Link libraries
-target_link_libraries(voxel_renderer ${SDL2_LIBRARIES})
+target_link_libraries(render ${SDL2_LIBRARIES})
 
 # Link OpenMP if found
 if(OpenMP_FOUND)
     if(OPENMP_LIBRARY)
-        target_link_libraries(voxel_renderer ${OPENMP_LIBRARY})
+        target_link_libraries(render ${OPENMP_LIBRARY})
     else()
-        target_link_libraries(voxel_renderer OpenMP::OpenMP_CXX)
+        target_link_libraries(render OpenMP::OpenMP_CXX)
     endif()
 endif()
 

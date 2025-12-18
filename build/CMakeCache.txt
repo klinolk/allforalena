@@ -131,7 +131,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=VoxelRenderer
+CMAKE_PROJECT_NAME:STATIC=SdfTask
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -211,13 +211,13 @@ OpenMP_libomp_LIBRARY:FILEPATH=OpenMP_libomp_LIBRARY-NOTFOUND
 SDL2_DIR:PATH=/opt/homebrew/lib/cmake/SDL2
 
 //Value Computed by CMake
-VoxelRenderer_BINARY_DIR:STATIC=/Users/kamila/building-maincraft-1/build
+SdfTask_BINARY_DIR:STATIC=/Users/kamila/building-maincraft-1/build
 
 //Value Computed by CMake
-VoxelRenderer_IS_TOP_LEVEL:STATIC=ON
+SdfTask_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-VoxelRenderer_SOURCE_DIR:STATIC=/Users/kamila/building-maincraft-1
+SdfTask_SOURCE_DIR:STATIC=/Users/kamila/building-maincraft-1
 
 
 ########################
